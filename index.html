@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>archer's todo list with api</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="menu">
+          <img class="logo" src="./pictures/logo_lg.svg" alt="logo" />
+          <img
+            class="username"
+            src="./pictures/王小明的代辦.svg"
+            alt="username"
+          />
+        </div>
+
+        <div class="show">
+          <div class="input">
+            <input type="text" class="inputText" placeholder="please enter new to-do" id = "inputVal"/>
+            <a href="#" class="addBtn" id = "addBtn"></a>
+          </div>
+
+          <div class = "card cardList">
+            <ul class = "tab" id = "tab">
+              <li class="active" data-tab="all">All</li>
+              <li data-tab="work">To-do</li>
+              <li data-tab="done">Done</li>
+            </ul>
+
+            <div class="cardContent">
+                <ul class="list" id="todoList"></ul>
+                <div class="listFooter">
+                    <p><span class="numLeft">0</span>items done</p>
+                    <a href="#" class = "clearDone">Clear items done</a>
+                </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>
